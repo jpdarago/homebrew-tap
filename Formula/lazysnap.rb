@@ -5,23 +5,23 @@
 class Lazysnap < Formula
   desc "A TUI for browsing and restoring tarsnap archives"
   homepage "https://github.com/jpdarago/lazysnap"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   depends_on "tarsnap"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jpdarago/lazysnap/releases/download/v0.1.0/lazysnap_0.1.0_darwin_amd64.tar.gz"
-      sha256 "1dc3b5b5dd0f1fafe4e193fe199e0991eec57fce64d4e688861652b08bdb15cf"
+      url "https://github.com/jpdarago/lazysnap/releases/download/v0.2.0/lazysnap_0.2.0_darwin_amd64.tar.gz"
+      sha256 "5172ae8af59f4667f030666d8be5314cda8ff20cb652114cbde71d76c9da8090"
 
       define_method(:install) do
         bin.install "lazysnap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jpdarago/lazysnap/releases/download/v0.1.0/lazysnap_0.1.0_darwin_arm64.tar.gz"
-      sha256 "97ad8618d5bda7f9daae442908b8ccba123cbb8457069052b2cc2a918860610e"
+      url "https://github.com/jpdarago/lazysnap/releases/download/v0.2.0/lazysnap_0.2.0_darwin_arm64.tar.gz"
+      sha256 "2a918c419f0ccc99b5f5e71e8e20c8a5d4172379b92ef3f7a44592b366000947"
 
       define_method(:install) do
         bin.install "lazysnap"
@@ -31,15 +31,15 @@ class Lazysnap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jpdarago/lazysnap/releases/download/v0.1.0/lazysnap_0.1.0_linux_amd64.tar.gz"
-      sha256 "e9a1ef5ad1303375b45a02c71a05b856f506ec232ec7603362f909470eebbe62"
+      url "https://github.com/jpdarago/lazysnap/releases/download/v0.2.0/lazysnap_0.2.0_linux_amd64.tar.gz"
+      sha256 "0559cb477d266f6b22d8c7c65f985a38d2ff758ddac05ad143ed95f499277956"
       define_method(:install) do
         bin.install "lazysnap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jpdarago/lazysnap/releases/download/v0.1.0/lazysnap_0.1.0_linux_arm64.tar.gz"
-      sha256 "6c081b59eb0e5517bd4d9f84f99659f187f12d5adff0ccddf3daa47387dbff3b"
+      url "https://github.com/jpdarago/lazysnap/releases/download/v0.2.0/lazysnap_0.2.0_linux_arm64.tar.gz"
+      sha256 "20a2385048820989ad8b2f4cf36dff9551b26da07a52e11d89753861265740e1"
       define_method(:install) do
         bin.install "lazysnap"
       end
