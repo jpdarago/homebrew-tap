@@ -5,21 +5,21 @@
 class Invoice < Formula
   desc "Command line invoice generator"
   homepage "https://github.com/jpdarago/invoice"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jpdarago/invoice/releases/download/v1.0.0/invoice_1.0.0_darwin_amd64.tar.gz"
-      sha256 "9ab611fbeb815b39791b3a1645300943e4aa9d015e4b8e296180c9aa67df4d5e"
+      url "https://github.com/jpdarago/invoice/releases/download/v1.0.1/invoice_1.0.1_darwin_amd64.tar.gz"
+      sha256 "d81a53da65c68e2a2c4fb7f610ff59f110747e4abbe3c75705ddd1104a9f10f0"
 
       define_method(:install) do
         bin.install "invoice"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jpdarago/invoice/releases/download/v1.0.0/invoice_1.0.0_darwin_arm64.tar.gz"
-      sha256 "a77956dd75616d8d4749642e0f1a25ff015c6ea4bc38779877eb5f369fb627a9"
+      url "https://github.com/jpdarago/invoice/releases/download/v1.0.1/invoice_1.0.1_darwin_arm64.tar.gz"
+      sha256 "ac26c78847582d76008fb82e841dec933d9f26e83bf419e8019fbef00ee92437"
 
       define_method(:install) do
         bin.install "invoice"
@@ -29,15 +29,15 @@ class Invoice < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jpdarago/invoice/releases/download/v1.0.0/invoice_1.0.0_linux_amd64.tar.gz"
-      sha256 "ae498ccf9b6911e401ea635d5020c8e019f804ec171278a1ac8910fe9323d77c"
+      url "https://github.com/jpdarago/invoice/releases/download/v1.0.1/invoice_1.0.1_linux_amd64.tar.gz"
+      sha256 "114d1955324b3cd5a9bea00f3426948b8b0e5aa7ee6ec93fadbcb388a9baee72"
       define_method(:install) do
         bin.install "invoice"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jpdarago/invoice/releases/download/v1.0.0/invoice_1.0.0_linux_arm64.tar.gz"
-      sha256 "88beed871fec710cdae557362f77c7482bc11d37f74378399a81a1ac13971d5d"
+      url "https://github.com/jpdarago/invoice/releases/download/v1.0.1/invoice_1.0.1_linux_arm64.tar.gz"
+      sha256 "46b8d8b8b997aaf3fc2d6b782f3c01cadd553d364eb524dc9430e4b167290c04"
       define_method(:install) do
         bin.install "invoice"
       end
