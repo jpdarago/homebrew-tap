@@ -28,10 +28,12 @@ brew "<formula>"
 | ------- | ----------- |
 | [`lazysnap`](https://github.com/jpdarago/lazysnap) | A TUI for browsing and restoring tarsnap archives |
 | [`claude-statusline`](https://github.com/jpdarago/claude-statusline) | Fast, minimal statusline generator for Claude Code |
+| [`bip39key`](https://github.com/jpdarago/bip39key) | Generate an OpenPGP/OpenSSH key from a BIP39 mnemonic |
 
-Formulae are generated and updated automatically by each project's
-[GoReleaser](https://goreleaser.com) release workflow — they should not be
-edited by hand.
+Most formulae are generated and updated automatically by each project's
+[GoReleaser](https://goreleaser.com) release workflow and should not be edited
+by hand. The exception is `bip39key` (a Rust source-build formula), which is
+maintained directly in this repository.
 
 ## Documentation
 
