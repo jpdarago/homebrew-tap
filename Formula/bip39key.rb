@@ -1,8 +1,8 @@
 class Bip39key < Formula
   desc "Generate an OpenPGP/OpenSSH/age key from a BIP39 mnemonic"
   homepage "https://github.com/jpdarago/bip39key"
-  url "https://github.com/jpdarago/bip39key/archive/refs/tags/v1.9.2.tar.gz"
-  sha256 "f62132f47bbb95907621d2959337c73516e77662ba21d826075354318b6040bd"
+  url "https://github.com/jpdarago/bip39key/archive/refs/tags/v1.10.0.tar.gz"
+  sha256 "02e7da5a1ef5684c22fa37de815f4bee861879d28e4a801936c6b944e7ac1ed3"
   license "MIT"
   head "https://github.com/jpdarago/bip39key.git", branch: "main"
 
